@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.9"
+    version="0.0.1"
     description="Edia Attendance integration">
     <oauth />
     <access_request>
