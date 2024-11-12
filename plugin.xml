@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin xmlns="http://plugin.powerschool.pearson.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
+    name="Edia Attendance"
+    version="0.0.9"
+    description="Edia Attendance integration">
+    <oauth />
+    <access_request>
+        <field table="calendar" field="code" access="ViewOnly" />
+        <field table="calendar" field="date1" access="ViewOnly" />
+        <field table="calendar" field="date2" access="ViewOnly" />
+        <field table="calendar" field="daysinrange" access="ViewOnly" />
+        <field table="calendar" field="dcid" access="ViewOnly" />
+        <field table="calendar" field="description" access="ViewOnly" />
+        <field table="calendar" field="id" access="ViewOnly" />
+        <field table="calendar" field="schoolid" access="ViewOnly" />
+        <field table="calendar" field="unused1" access="ViewOnly" />
+        <field table="calendar" field="yearid" access="ViewOnly" />
+
+        <field table="calendar_day" field="a" access="ViewOnly" />
+        <field table="calendar_day" field="b" access="ViewOnly" />
+        <field table="calendar_day" field="bell_schedule_id" access="ViewOnly" />
+        <field table="calendar_day" field="c" access="ViewOnly" />
+        <field table="calendar_day" field="cycle_day_id" access="ViewOnly" />
+        <field table="calendar_day" field="d" access="ViewOnly" />
+        <field table="calendar_day" field="date_value" access="ViewOnly" />
+        <field table="calendar_day" field="dcid" access="ViewOnly" />
+        <field table="calendar_day" field="e" access="ViewOnly" />
+        <field table="calendar_day" field="f" access="ViewOnly" />
+        <field table="calendar_day" field="id" access="ViewOnly" />
+        <field table="calendar_day" field="insession" access="ViewOnly" />
+        <field table="calendar_day" field="membershipvalue" access="ViewOnly" />
+        <field table="calendar_day" field="note" access="ViewOnly" />
+        <field table="calendar_day" field="scheduleid" access="ViewOnly" />
+        <field table="calendar_day" field="schoolid" access="ViewOnly" />
+        <field table="calendar_day" field="type" access="ViewOnly" />
+        <field table="calendar_day" field="week_num" access="ViewOnly" />
+
+        <field table="bell_schedule" field="id" access="ViewOnly" />
+        <field table="bell_schedule" field="attendance_conversion_id" access="ViewOnly" />
+        <field table="bell_schedule" field="dcid" access="ViewOnly" />
+        <field table="bell_schedule" field="name" access="ViewOnly" />
+        <field table="bell_schedule" field="schoolid" access="ViewOnly" />
+        <field table="bell_schedule" field="year_id" access="ViewOnly" />
+
+        <field table="bell_schedule_items" field="id" access="ViewOnly" />
+        <field table="bell_schedule_items" field="ada_code" access="ViewOnly" />
+        <field table="bell_schedule_items" field="bell_schedule_id" access="ViewOnly" />
+        <field table="bell_schedule_items" field="daily_attendance_code" access="ViewOnly" />
+        <field table="bell_schedule_items" field="daily_time_in_default" access="ViewOnly" />
+        <field table="bell_schedule_items" field="daily_time_out_default" access="ViewOnly" />
+        <field table="bell_schedule_items" field="daypartid" access="ViewOnly" />
+        <field table="bell_schedule_items" field="dcid" access="ViewOnly" />
+        <field table="bell_schedule_items" field="end_time" access="ViewOnly" />
+        <field table="bell_schedule_items" field="minutes_attended" access="ViewOnly" />
+        <field table="bell_schedule_items" field="period_id" access="ViewOnly" />
+        <field table="bell_schedule_items" field="start_time" access="ViewOnly" />
+
+        <field table='attendance' field='att_comment' access='FullAccess'/>
+        <field table='attendance' field='att_date' access='ViewOnly'/>
+        <field table='attendance' field='att_flags' access='ViewOnly'/>
+        <field table='attendance' field='att_interval' access='ViewOnly'/>
+        <field table='attendance' field='att_mode_code' access='ViewOnly'/>
+        <field table='attendance' field='attendance_codeid' access='FullAccess'/>
+        <field table='attendance' field='ccid' access='ViewOnly'/>
+        <field table='attendance' field='calendar_dayid' access='ViewOnly'/>
+        <field table='attendance' field='dcid' access='ViewOnly'/>
+        <field table='attendance' field='id' access='ViewOnly'/>
+        <field table='attendance' field='periodid' access='ViewOnly'/>
+        <field table='attendance' field='programid' access='ViewOnly'/>
+        <field table='attendance' field='schoolid' access='ViewOnly'/>
+        <field table='attendance' field='studentid' access='ViewOnly'/>
+        <field table='attendance' field='total_minutes' access='ViewOnly'/>
+        <field table='attendance' field='yearid' access='ViewOnly'/>
+
+        <field table='attendance_taken' field='att_date' access='ViewOnly'/>
+        <field table='attendance_taken' field='att_interval' access='ViewOnly'/>
+        <field table='attendance_taken' field='att_taken_dt' access='ViewOnly'/>
+        <field table='attendance_taken' field='dcid' access='ViewOnly'/>
+        <field table='attendance_taken' field='id' access='ViewOnly'/>
+        <field table='attendance_taken' field='periodid' access='ViewOnly'/>
+        <field table='attendance_taken' field='sectionid' access='ViewOnly'/>
+
+        <field table='attendance_code' field='att_code' access='ViewOnly'/>
+        <field table='attendance_code' field='dcid' access='ViewOnly'/>
+        <field table='attendance_code' field='description' access='ViewOnly'/>
+        <field table='attendance_code' field='id' access='ViewOnly'/>
+        <field table='attendance_code' field='presence_status_cd' access='ViewOnly'/>
+        <field table='attendance_code' field='schoolid' access='ViewOnly'/>
+        <field table='attendance_code' field='yearid' access='ViewOnly'/>
+    </access_request>
+    <publisher name="Edia Learning">
+        <contact email="support@edia.app" />
+    </publisher>
+</plugin>
