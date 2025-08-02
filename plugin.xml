@@ -274,6 +274,63 @@
         <field table="person" field="employer" access="ViewOnly" />
         <field table="person" field="isactive" access="ViewOnly" />
         <field table="person" field="excludefromstatereporting" access="ViewOnly" />
+
+        <field table="student" field="dcid" access="ViewOnly" />
+        <field table="student" field="id" access="ViewOnly" />
+        <field table="student" field="first_name" access="ViewOnly" />
+        <field table="student" field="middle_name" access="ViewOnly" />
+        <field table="student" field="last_name" access="ViewOnly" />
+        <field table="student" field="student_number" access="ViewOnly" />
+        <field table="student" field="enroll_status" access="ViewOnly" />
+        <field table="student" field="grade_level" access="ViewOnly" />
+        <field table="student" field="gender" access="ViewOnly" />
+        <field table="student" field="entrydate" access="ViewOnly" />
+        <field table="student" field="exitdate" access="ViewOnly" />
+        <field table="student" field="schoolid" access="ViewOnly" />
+        <field table="student" field="dob" access="ViewOnly" />
+        <field table="student" field="street" access="ViewOnly" />
+        <field table="student" field="city" access="ViewOnly" />
+        <field table="student" field="state" access="ViewOnly" />
+        <field table="student" field="zip" access="ViewOnly" />
+        <field table="student" field="geocode" access="ViewOnly" />
+        <field table="student" field="person_id" access="ViewOnly" />
+
+        <field table="reenrollments" field="dcid" access="ViewOnly" />
+        <field table="reenrollments" field="id" access="ViewOnly" />
+        <field table="reenrollments" field="entrydate" access="ViewOnly" />
+        <field table="reenrollments" field="exitdate" access="ViewOnly" />
+        <field table="reenrollments" field="schoolid" access="ViewOnly" />
+        <field table="reenrollments" field="grade_level" access="ViewOnly" />
+
+        <field table="studentcontactdetail" field="studentcontactdetailid" access="ViewOnly" />
+        <field table="studentcontactdetail" field="enddate" access="ViewOnly" />
+        <field table="studentcontactdetail" field="isactive" access="ViewOnly" />
+        <field table="studentcontactdetail" field="iscustodial" access="ViewOnly" />
+        <field table="studentcontactdetail" field="isemergency" access="ViewOnly" />
+        <field table="studentcontactdetail" field="liveswithflg" access="ViewOnly" />
+        <field table="studentcontactdetail" field="relationshipnote" access="ViewOnly" />
+        <field table="studentcontactdetail" field="relationshiptypecodesetid" access="ViewOnly" />
+        <field table="studentcontactdetail" field="schoolpickupflg" access="ViewOnly" />
+        <field table="studentcontactdetail" field="startdate" access="ViewOnly" />
+        <field table="studentcontactdetail" field="studentcontactassocid" access="ViewOnly" />
+
+        <field table="personemailaddressassoc" field="personemailaddressassocid" access="ViewOnly" />
+        <field table="personemailaddressassoc" field="emailAddressId" access="ViewOnly" />
+        <field table="personemailaddressassoc" field="emailaddresspriorityorder" access="ViewOnly" />
+        <field table="personemailaddressassoc" field="emailtypecodesetid" access="ViewOnly" />
+        <field table="personemailaddressassoc" field="isprimaryemailaddress" access="ViewOnly" />
+        <field table="personEmailAddressAssoc" field="personId" access="ViewOnly" />
+
+        <field table="emailAddress" field="emailAddressId" access="ViewOnly" />
+        <field table="emailAddress" field="emailAddress" access="ViewOnly" />
+
+        <field table="codeset" field="codesetid" access="ViewOnly" />
+        <field table="codeset" field="code" access="ViewOnly" />
+        <field table="codeset" field="codeorigin" access="ViewOnly" />
+        <field table="codeset" field="codetype" access="ViewOnly" />
+        <field table="codeset" field="description" access="ViewOnly" />
+        <field table="codeset" field="displayvalue" access="ViewOnly" />
+
     </access_request>
     <publisher name="Edia Learning">
         <contact email="support@edia.app" />
