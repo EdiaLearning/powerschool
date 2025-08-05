@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.4"
+    version="0.0.5"
     description="Edia Attendance integration">
     <oauth />
     <access_request>
@@ -275,25 +275,25 @@
         <field table="person" field="isactive" access="ViewOnly" />
         <field table="person" field="excludefromstatereporting" access="ViewOnly" />
 
-        <field table="student" field="dcid" access="ViewOnly" />
-        <field table="student" field="id" access="ViewOnly" />
-        <field table="student" field="first_name" access="ViewOnly" />
-        <field table="student" field="middle_name" access="ViewOnly" />
-        <field table="student" field="last_name" access="ViewOnly" />
-        <field table="student" field="student_number" access="ViewOnly" />
-        <field table="student" field="enroll_status" access="ViewOnly" />
-        <field table="student" field="grade_level" access="ViewOnly" />
-        <field table="student" field="gender" access="ViewOnly" />
-        <field table="student" field="entrydate" access="ViewOnly" />
-        <field table="student" field="exitdate" access="ViewOnly" />
-        <field table="student" field="schoolid" access="ViewOnly" />
-        <field table="student" field="dob" access="ViewOnly" />
-        <field table="student" field="street" access="ViewOnly" />
-        <field table="student" field="city" access="ViewOnly" />
-        <field table="student" field="state" access="ViewOnly" />
-        <field table="student" field="zip" access="ViewOnly" />
-        <field table="student" field="geocode" access="ViewOnly" />
-        <field table="student" field="person_id" access="ViewOnly" />
+        <field table="students" field="dcid" access="ViewOnly" />
+        <field table="students" field="id" access="ViewOnly" />
+        <field table="students" field="first_name" access="ViewOnly" />
+        <field table="students" field="middle_name" access="ViewOnly" />
+        <field table="students" field="last_name" access="ViewOnly" />
+        <field table="students" field="student_number" access="ViewOnly" />
+        <field table="students" field="enroll_status" access="ViewOnly" />
+        <field table="students" field="grade_level" access="ViewOnly" />
+        <field table="students" field="gender" access="ViewOnly" />
+        <field table="students" field="entrydate" access="ViewOnly" />
+        <field table="students" field="exitdate" access="ViewOnly" />
+        <field table="students" field="schoolid" access="ViewOnly" />
+        <field table="students" field="dob" access="ViewOnly" />
+        <field table="students" field="street" access="ViewOnly" />
+        <field table="students" field="city" access="ViewOnly" />
+        <field table="students" field="state" access="ViewOnly" />
+        <field table="students" field="zip" access="ViewOnly" />
+        <field table="students" field="geocode" access="ViewOnly" />
+        <field table="students" field="person_id" access="ViewOnly" />
 
         <field table="reenrollments" field="dcid" access="ViewOnly" />
         <field table="reenrollments" field="id" access="ViewOnly" />
