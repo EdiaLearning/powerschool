@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.5"
+    version="0.0.6"
     description="Edia Attendance integration">
     <oauth />
     <access_request>
@@ -331,6 +331,45 @@
         <field table="codeset" field="description" access="ViewOnly" />
         <field table="codeset" field="displayvalue" access="ViewOnly" />
 
+        <field table="gen" field="cat" access="ViewOnly" />
+        <field table="gen" field="date_value" access="ViewOnly" />
+        <field table="gen" field="date2" access="ViewOnly" />
+        <field table="gen" field="dcid" access="ViewOnly" />
+        <field table="gen" field="id" access="ViewOnly" />
+        <field table="gen" field="log" access="ViewOnly" />
+        <field table="gen" field="name" access="ViewOnly" />
+        <field table="gen" field="powerlink" access="ViewOnly" />
+        <field table="gen" field="powerlinkspan" access="ViewOnly" />
+        <field table="gen" field="schoolid" access="ViewOnly" />
+        <field table="gen" field="sortorder" access="ViewOnly" />
+        <field table="gen" field="spedindicator" access="ViewOnly" />
+        <field table="gen" field="time1" access="ViewOnly" />
+        <field table="gen" field="time2" access="ViewOnly" />
+        <field table="gen" field="value" access="ViewOnly" />
+        <field table="gen" field="value2" access="ViewOnly" />
+        <field table="gen" field="valueli" access="ViewOnly" />
+        <field table="gen" field="valueli2" access="ViewOnly" />
+        <field table="gen" field="valueli3" access="ViewOnly" />
+        <field table="gen" field="valueli4" access="ViewOnly" />
+        <field table="gen" field="valuer" access="ViewOnly" />
+        <field table="gen" field="valuer2" access="ViewOnly" />
+        <field table="gen" field="valuet" access="ViewOnly" />
+        <field table="gen" field="valuet2" access="ViewOnly" />
+        <field table="gen" field="yearid" access="ViewOnly" />
+
+        <field table="spenrollments" field="code1" access="ViewOnly" />
+        <field table="spenrollments" field="code2" access="ViewOnly" />
+        <field table="spenrollments" field="comment_value" access="ViewOnly" />
+        <field table="spenrollments" field="custom" access="ViewOnly" />
+        <field table="spenrollments" field="dcid" access="ViewOnly" />
+        <field table="spenrollments" field="enter_date" access="ViewOnly" />
+        <field table="spenrollments" field="exitcode" access="ViewOnly" />
+        <field table="spenrollments" field="exit_date" access="ViewOnly" />
+        <field table="spenrollments" field="gradelevel" access="ViewOnly" />
+        <field table="spenrollments" field="id" access="ViewOnly" />
+        <field table="spenrollments" field="programid" access="ViewOnly" />
+        <field table="spenrollments" field="schoolid" access="ViewOnly" />
+        <field table="spenrollments" field="studentid" access="ViewOnly" />
     </access_request>
     <publisher name="Edia Learning">
         <contact email="support@edia.app" />
