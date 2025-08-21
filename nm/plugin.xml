@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.6"
-    description="Edia Attendance integration">
+    version="0.0.7"
+    description="Edia Attendance integration (NM)">
     <oauth />
     <access_request>
         <field table="schools" field="abbreviation" access="ViewOnly" />
@@ -330,6 +330,13 @@
         <field table="codeset" field="codetype" access="ViewOnly" />
         <field table="codeset" field="description" access="ViewOnly" />
         <field table="codeset" field="displayvalue" access="ViewOnly" />
+
+        <field table="S_NM_STU_X" field="studentsdcid" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="Plan504_YN" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="SpEd_YN" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="SpEd38_YN" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="SpEdExitDate" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="ExitedSpEdStatus" access="ViewOnly" />
 
     </access_request>
     <publisher name="Edia Learning">
