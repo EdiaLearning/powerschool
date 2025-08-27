@@ -385,6 +385,10 @@
         <field table="S_NM_STU_X" field="SpEd38_YN" access="ViewOnly" />
         <field table="S_NM_STU_X" field="SpEdExitDate" access="ViewOnly" />
         <field table="S_NM_STU_X" field="ExitedSpEdStatus" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="GuardianEmail" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="GuardianFirstName" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="GuardianLastName" access="ViewOnly" />
+        <field table="S_NM_STU_X" field="GuardianPhone" access="ViewOnly" />
 
     </access_request>
     <publisher name="Edia Learning">
