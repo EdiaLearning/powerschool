@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.6"
+    version="0.0.8"
     description="Edia Attendance integration">
     <oauth />
     <access_request>
@@ -75,6 +75,15 @@
         <field table="calendar_day" field="schoolid" access="ViewOnly" />
         <field table="calendar_day" field="type" access="ViewOnly" />
         <field table="calendar_day" field="week_num" access="ViewOnly" />
+
+        <field table="cycle_day" field="dcid" access="ViewOnly" />
+        <field table="cycle_day" field="id" access="ViewOnly" />
+        <field table="cycle_day" field="schoolid" access="ViewOnly" />
+        <field table="cycle_day" field="year_id" access="ViewOnly" />
+        <field table="cycle_day" field="letter" access="ViewOnly" />
+        <field table="cycle_day" field="day_number" access="ViewOnly" />
+        <field table="cycle_day" field="abbreviation" access="ViewOnly" />
+        <field table="cycle_day" field="day_name" access="ViewOnly" />
 
         <field table="period" field="abbreviation" access="ViewOnly" />
         <field table="period" field="dcid" access="ViewOnly" />
@@ -294,6 +303,10 @@
         <field table="students" field="zip" access="ViewOnly" />
         <field table="students" field="geocode" access="ViewOnly" />
         <field table="students" field="person_id" access="ViewOnly" />
+        <field table="students" field="emerg_contact_1" access="ViewOnly" />
+        <field table="students" field="emerg_contact_2" access="ViewOnly" />
+        <field table="students" field="emerg_phone_1" access="ViewOnly" />
+        <field table="students" field="emerg_phone_2" access="ViewOnly" />
 
         <field table="reenrollments" field="dcid" access="ViewOnly" />
         <field table="reenrollments" field="id" access="ViewOnly" />
@@ -313,6 +326,41 @@
         <field table="studentcontactdetail" field="schoolpickupflg" access="ViewOnly" />
         <field table="studentcontactdetail" field="startdate" access="ViewOnly" />
         <field table="studentcontactdetail" field="studentcontactassocid" access="ViewOnly" />
+        <field table="studentcontactdetail" field="generalcommflag" access="ViewOnly" />
+        <field table="studentcontactdetail" field="confidentialcommflag" access="ViewOnly" />
+
+        <field table="studentcontactdetailcorefields" field="studentcstudentcontactdetailid" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="classroomparticipation" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="iepaccess" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="iscaregiver" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="isvolunteer" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="legalguardian" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="nostudentcontact" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="physicaladdresssource" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="primarycontact" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="samehomephonenumber" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="samemailingaddress" access="ViewOnly" />
+        <field table="studentcontactdetailcorefields" field="source" access="ViewOnly" />
+
+        <field table="guardian" field="guardianid" access="ViewOnly" />
+        <field table="guardian" field="accountidentifier" access="ViewOnly" />
+        <field table="guardian" field="email" access="ViewOnly" />
+        <field table="guardian" field="firstname" access="ViewOnly" />
+        <field table="guardian" field="isplatformmigrated" access="ViewOnly" />
+        <field table="guardian" field="lastname" access="ViewOnly" />
+        <field table="guardian" field="middlename" access="ViewOnly" />
+        <field table="guardian" field="psguid" access="ViewOnly" />
+        <field table="guardian" field="state_guardiannumber" access="ViewOnly" />
+
+        <field table="guardianrelationshiptype" field="guardianrelationshiptypeid" access="ViewOnly" />
+        <field table="guardianrelationshiptype" field="displayorder" access="ViewOnly" />
+        <field table="guardianrelationshiptype" field="sifrelationtostudent" access="ViewOnly" />
+
+        <field table="guardianstudent" field="guardianstudentid" access="ViewOnly" />
+        <field table="guardianstudent" field="guardianid" access="ViewOnly" />
+        <field table="guardianstudent" field="guardianrelationshiptypeid" access="ViewOnly" />
+        <field table="guardianstudent" field="studentsdcid" access="ViewOnly" />
+        <field table="guardianstudent" field="guardianrelationshiptypeid" access="ViewOnly" />
 
         <field table="personemailaddressassoc" field="personemailaddressassocid" access="ViewOnly" />
         <field table="personemailaddressassoc" field="emailAddressId" access="ViewOnly" />
