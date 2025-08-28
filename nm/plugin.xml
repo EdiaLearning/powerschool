@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.8"
+    version="0.0.9"
     description="Edia Attendance integration (NM)">
     <oauth />
     <access_request>
@@ -307,6 +307,20 @@
         <field table="students" field="emerg_contact_2" access="ViewOnly" />
         <field table="students" field="emerg_phone_1" access="ViewOnly" />
         <field table="students" field="emerg_phone_2" access="ViewOnly" />
+
+        <field table="studentcorefields" field="studentsdcid" access="ViewOnly" />
+        <field table="studentcorefields" field="father_home_phone" access="ViewOnly" />
+        <field table="studentcorefields" field="fatherdayphone" access="ViewOnly" />
+        <field table="studentcorefields" field="guardian" access="ViewOnly" />
+        <field table="studentcorefields" field="guardian_fn" access="ViewOnly" />
+        <field table="studentcorefields" field="guardian_ln" access="ViewOnly" />
+        <field table="studentcorefields" field="guardian_mn" access="ViewOnly" />
+        <field table="studentcorefields" field="guardiandayphone" access="ViewOnly" />
+        <field table="studentcorefields" field="guardianrelcode" access="ViewOnly" />
+        <field table="studentcorefields" field="guardianship" access="ViewOnly" />
+        <field table="studentcorefields" field="mother_home_phone" access="ViewOnly" />
+        <field table="studentcorefields" field="motherdayphone" access="ViewOnly" />
+        <field table="studentcorefields" field="singleparenthshldflag" access="ViewOnly" />
 
         <field table="reenrollments" field="dcid" access="ViewOnly" />
         <field table="reenrollments" field="id" access="ViewOnly" />
