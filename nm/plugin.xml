@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.9"
+    version="0.0.10"
     description="Edia Attendance integration (NM)">
     <oauth />
     <access_request>
@@ -335,6 +335,7 @@
         <field table="studentcontactdetail" field="iscustodial" access="ViewOnly" />
         <field table="studentcontactdetail" field="isemergency" access="ViewOnly" />
         <field table="studentcontactdetail" field="liveswithflg" access="ViewOnly" />
+        <field table="studentcontactdetail" field="receivesmailflg" access="ViewOnly" />
         <field table="studentcontactdetail" field="relationshipnote" access="ViewOnly" />
         <field table="studentcontactdetail" field="relationshiptypecodesetid" access="ViewOnly" />
         <field table="studentcontactdetail" field="schoolpickupflg" access="ViewOnly" />
