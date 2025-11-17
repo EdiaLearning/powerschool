@@ -394,6 +394,14 @@
         <field table="codeset" field="description" access="ViewOnly" />
         <field table="codeset" field="displayvalue" access="ViewOnly" />
 
+        <field table="prefs" field="dcid" access="ViewOnly" />
+        <field table="prefs" field="name" access="ViewOnly" />
+        <field table="prefs" field="value" access="ViewOnly" />
+        <field table="prefs" field="id" access="ViewOnly" />
+        <field table="prefs" field="schoolid" access="ViewOnly" />
+        <field table="prefs" field="yearid" access="ViewOnly" />
+        <field table="prefs" field="userid" access="ViewOnly" />
+
     </access_request>
     <publisher name="Edia Learning">
         <contact email="support@edia.app" />
