@@ -420,6 +420,22 @@
         <field table="classrank" field="outof" access="ViewOnly" />
         <field table="classrank" field="dateranked" access="ViewOnly" />
 
+        <field table="log" field="dcid" access="ViewOnly" />
+        <field table="log" field="id" access="ViewOnly" />
+        <field table="log" field="studentid" access="ViewOnly" />
+        <field table="log" field="teacherid" access="ViewOnly" />
+        <field table="log" field="entry_author" access="ViewOnly" />
+        <field table="log" field="entry_date" access="ViewOnly" />
+        <field table="log" field="entry_time" access="ViewOnly" />
+        <field table="log" field="subject" access="ViewOnly" />
+        <field table="log" field="entry" access="ViewOnly" />
+        <field table="log" field="schoolid" access="ViewOnly" />
+        <field table="log" field="logtypeid" access="ViewOnly" />
+        <field table="log" field="subtype" access="ViewOnly" />
+        <field table="log" field="consequence" access="ViewOnly" />
+        <field table="log" field="discipline_incidentdate" access="ViewOnly" />
+        <field table="log" field="discipline_actiontaken" access="ViewOnly" />
+
     </access_request>
     <publisher name="Edia Learning">
         <contact email="support@edia.app" />

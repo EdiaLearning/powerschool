@@ -420,6 +420,22 @@
         <field table="classrank" field="outof" access="ViewOnly" />
         <field table="classrank" field="dateranked" access="ViewOnly" />
 
+        <field table="log" field="dcid" access="ViewOnly" />
+        <field table="log" field="id" access="ViewOnly" />
+        <field table="log" field="studentid" access="ViewOnly" />
+        <field table="log" field="teacherid" access="ViewOnly" />
+        <field table="log" field="entry_author" access="ViewOnly" />
+        <field table="log" field="entry_date" access="ViewOnly" />
+        <field table="log" field="entry_time" access="ViewOnly" />
+        <field table="log" field="subject" access="ViewOnly" />
+        <field table="log" field="entry" access="ViewOnly" />
+        <field table="log" field="schoolid" access="ViewOnly" />
+        <field table="log" field="logtypeid" access="ViewOnly" />
+        <field table="log" field="subtype" access="ViewOnly" />
+        <field table="log" field="consequence" access="ViewOnly" />
+        <field table="log" field="discipline_incidentdate" access="ViewOnly" />
+        <field table="log" field="discipline_actiontaken" access="ViewOnly" />
+
         <field table="S_NM_STU_X" field="studentsdcid" access="ViewOnly" />
         <field table="S_NM_STU_X" field="Plan504_YN" access="ViewOnly" />
         <field table="S_NM_STU_X" field="SpEd_YN" access="ViewOnly" />
