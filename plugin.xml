@@ -307,6 +307,11 @@
         <field table="students" field="emerg_contact_2" access="ViewOnly" />
         <field table="students" field="emerg_phone_1" access="ViewOnly" />
         <field table="students" field="emerg_phone_2" access="ViewOnly" />
+        <field table="students" field="simple_gpa" access="ViewOnly" />
+        <field table="students" field="cumulative_pct" access="ViewOnly" />
+        <field table="students" field="simple_pct" access="ViewOnly" />
+        <field table="students" field="exclude_fr_rank" access="ViewOnly" />
+        <field table="students" field="customrank_gpa" access="ViewOnly" />
 
         <field table="studentcorefields" field="studentsdcid" access="ViewOnly" />
         <field table="studentcorefields" field="father_home_phone" access="ViewOnly" />
