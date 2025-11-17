@@ -407,6 +407,19 @@
         <field table="prefs" field="yearid" access="ViewOnly" />
         <field table="prefs" field="userid" access="ViewOnly" />
 
+        <field table="classrank" field="dcid" access="ViewOnly" />
+        <field table="classrank" field="id" access="ViewOnly" />
+        <field table="classrank" field="studentid" access="ViewOnly" />
+        <field table="classrank" field="yearid" access="ViewOnly" />
+        <field table="classrank" field="schoolid" access="ViewOnly" />
+        <field table="classrank" field="storecode" access="ViewOnly" />
+        <field table="classrank" field="grade_level" access="ViewOnly" />
+        <field table="classrank" field="gpamethod" access="ViewOnly" />
+        <field table="classrank" field="gpa" access="ViewOnly" />
+        <field table="classrank" field="rank" access="ViewOnly" />
+        <field table="classrank" field="outof" access="ViewOnly" />
+        <field table="classrank" field="dateranked" access="ViewOnly" />
+
         <field table="S_NM_STU_X" field="studentsdcid" access="ViewOnly" />
         <field table="S_NM_STU_X" field="Plan504_YN" access="ViewOnly" />
         <field table="S_NM_STU_X" field="SpEd_YN" access="ViewOnly" />
