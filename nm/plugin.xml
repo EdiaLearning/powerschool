@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.10"
+    version="0.0.11"
     description="Edia Attendance integration (NM)">
     <oauth />
     <access_request>
@@ -307,6 +307,11 @@
         <field table="students" field="emerg_contact_2" access="ViewOnly" />
         <field table="students" field="emerg_phone_1" access="ViewOnly" />
         <field table="students" field="emerg_phone_2" access="ViewOnly" />
+        <field table="students" field="simple_gpa" access="ViewOnly" />
+        <field table="students" field="cumulative_pct" access="ViewOnly" />
+        <field table="students" field="simple_pct" access="ViewOnly" />
+        <field table="students" field="exclude_fr_rank" access="ViewOnly" />
+        <field table="students" field="customrank_gpa" access="ViewOnly" />
 
         <field table="studentcorefields" field="studentsdcid" access="ViewOnly" />
         <field table="studentcorefields" field="father_home_phone" access="ViewOnly" />
@@ -393,6 +398,124 @@
         <field table="codeset" field="codetype" access="ViewOnly" />
         <field table="codeset" field="description" access="ViewOnly" />
         <field table="codeset" field="displayvalue" access="ViewOnly" />
+
+        <field table="prefs" field="dcid" access="ViewOnly" />
+        <field table="prefs" field="name" access="ViewOnly" />
+        <field table="prefs" field="value" access="ViewOnly" />
+        <field table="prefs" field="id" access="ViewOnly" />
+        <field table="prefs" field="schoolid" access="ViewOnly" />
+        <field table="prefs" field="yearid" access="ViewOnly" />
+        <field table="prefs" field="userid" access="ViewOnly" />
+
+        <field table="classrank" field="dcid" access="ViewOnly" />
+        <field table="classrank" field="id" access="ViewOnly" />
+        <field table="classrank" field="studentid" access="ViewOnly" />
+        <field table="classrank" field="yearid" access="ViewOnly" />
+        <field table="classrank" field="schoolid" access="ViewOnly" />
+        <field table="classrank" field="storecode" access="ViewOnly" />
+        <field table="classrank" field="grade_level" access="ViewOnly" />
+        <field table="classrank" field="gpamethod" access="ViewOnly" />
+        <field table="classrank" field="gpa" access="ViewOnly" />
+        <field table="classrank" field="rank" access="ViewOnly" />
+        <field table="classrank" field="outof" access="ViewOnly" />
+        <field table="classrank" field="dateranked" access="ViewOnly" />
+
+        <field table="log" field="dcid" access="ViewOnly" />
+        <field table="log" field="id" access="ViewOnly" />
+        <field table="log" field="studentid" access="ViewOnly" />
+        <field table="log" field="teacherid" access="ViewOnly" />
+        <field table="log" field="entry_author" access="ViewOnly" />
+        <field table="log" field="entry_date" access="ViewOnly" />
+        <field table="log" field="entry_time" access="ViewOnly" />
+        <field table="log" field="subject" access="ViewOnly" />
+        <field table="log" field="entry" access="ViewOnly" />
+        <field table="log" field="schoolid" access="ViewOnly" />
+        <field table="log" field="logtypeid" access="ViewOnly" />
+        <field table="log" field="subtype" access="ViewOnly" />
+        <field table="log" field="consequence" access="ViewOnly" />
+        <field table="log" field="discipline_incidentdate" access="ViewOnly" />
+        <field table="log" field="discipline_actiontaken" access="ViewOnly" />
+
+        <field table="incident" field="incident_id" access="ViewOnly" />
+        <field table="incident" field="created_by" access="ViewOnly" />
+        <field table="incident" field="created_ts" access="ViewOnly" />
+        <field table="incident" field="entry_author" access="ViewOnly" />
+        <field table="incident" field="financial_impact" access="ViewOnly" />
+        <field table="incident" field="incident_detail_desc" access="ViewOnly" />
+        <field table="incident" field="incident_reference_value" access="ViewOnly" />
+        <field table="incident" field="incident_title" access="ViewOnly" />
+        <field table="incident" field="incident_ts" access="ViewOnly" />
+        <field table="incident" field="isteacherreferral" access="ViewOnly" />
+        <field table="incident" field="last_modified_by" access="ViewOnly" />
+        <field table="incident" field="last_modified_ts" access="ViewOnly" />
+        <field table="incident" field="location_details" access="ViewOnly" />
+        <field table="incident" field="school_number" access="ViewOnly" />
+
+        <field table="incident_action" field="incident_action_id" access="ViewOnly" />
+        <field table="incident_action" field="action_actual_resolved_dt" access="ViewOnly" />
+        <field table="incident_action" field="action_change_reason" access="ViewOnly" />
+        <field table="incident_action" field="action_incident_detail_id" access="ViewOnly" />
+        <field table="incident_action" field="action_plan_begin_dt" access="ViewOnly" />
+        <field table="incident_action" field="action_plan_end_dt" access="ViewOnly" />
+        <field table="incident_action" field="action_resolved_desc" access="ViewOnly" />
+        <field table="incident_action" field="chng_rsn_incident_detail_id" access="ViewOnly" />
+        <field table="incident_action" field="created_by" access="ViewOnly" />
+        <field table="incident_action" field="created_ts" access="ViewOnly" />
+        <field table="incident_action" field="duration_actual" access="ViewOnly" />
+        <field table="incident_action" field="duration_assigned" access="ViewOnly" />
+        <field table="incident_action" field="duration_incident_detail_id" access="ViewOnly" />
+        <field table="incident_action" field="duration_notes" access="ViewOnly" />
+        <field table="incident_action" field="incident_id" access="ViewOnly" />
+        <field table="incident_action" field="last_modified_by" access="ViewOnly" />
+        <field table="incident_action" field="last_modified_ts" access="ViewOnly" />
+
+        <field table="incident_detail" field="incident_detail_id" access="ViewOnly" />
+        <field table="incident_detail" field="allegation_indicator" access="ViewOnly" />
+        <field table="incident_detail" field="created_by" access="ViewOnly" />
+        <field table="incident_detail" field="created_ts" access="ViewOnly" />
+        <field table="incident_detail" field="incident_id" access="ViewOnly" />
+        <field table="incident_detail" field="last_modified_by" access="ViewOnly" />
+        <field table="incident_detail" field="last_modified_ts" access="ViewOnly" />
+        <field table="incident_detail" field="lookup_code_desc" access="ViewOnly" />
+        <field table="incident_detail" field="lu_code_id" access="ViewOnly" />
+        <field table="incident_detail" field="lu_sub_code_id" access="ViewOnly" />
+        <field table="incident_detail" field="primary_indicator" access="ViewOnly" />
+
+        <field table="incident_lu_code" field="lu_code_id" access="ViewOnly" />
+        <field table="incident_lu_code" field="application_display_order" access="ViewOnly" />
+        <field table="incident_lu_code" field="code_type" access="ViewOnly" />
+        <field table="incident_lu_code" field="created_by" access="ViewOnly" />
+        <field table="incident_lu_code" field="created_ts" access="ViewOnly" />
+        <field table="incident_lu_code" field="incident_category" access="ViewOnly" />
+        <field table="incident_lu_code" field="is_system_code" access="ViewOnly" />
+        <field table="incident_lu_code" field="last_modified_by" access="ViewOnly" />
+        <field table="incident_lu_code" field="last_modified_ts" access="ViewOnly" />
+        <field table="incident_lu_code" field="state_aggregate_rpt_code" access="ViewOnly" />
+
+        <field table="incident_lu_sub_code" field="lu_sub_code_id" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="application_display_order" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="comment_enable_state" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="created_by" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="created_ts" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="datatype_attribute" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="effective_begin_dt" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="effective_end_dt" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="is_administrator_reportable_flg" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="is_police_reportable_flg" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="is_state_reportable_flg" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="is_teacher_reportable_flg" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="last_modified_by" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="last_modified_ts" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="long_desc" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="lu_code_id" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="parent_lu_sub_code_id" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="policy_desc" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="restricted" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="severity" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="short_desc" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="state_detail_report_code" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="status" access="ViewOnly" />
+        <field table="incident_lu_sub_code" field="sub_category" access="ViewOnly" />
 
         <field table="S_NM_STU_X" field="studentsdcid" access="ViewOnly" />
         <field table="S_NM_STU_X" field="Plan504_YN" access="ViewOnly" />
