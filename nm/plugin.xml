@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.11"
+    version="0.0.12"
     description="Edia Attendance integration (NM)">
     <oauth />
     <access_request>
@@ -500,10 +500,8 @@
         <field table="incident_lu_sub_code" field="datatype_attribute" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="effective_begin_dt" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="effective_end_dt" access="ViewOnly" />
-        <field table="incident_lu_sub_code" field="is_administrator_reportable_flg" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="is_police_reportable_flg" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="is_state_reportable_flg" access="ViewOnly" />
-        <field table="incident_lu_sub_code" field="is_teacher_reportable_flg" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="last_modified_by" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="last_modified_ts" access="ViewOnly" />
         <field table="incident_lu_sub_code" field="long_desc" access="ViewOnly" />
@@ -527,7 +525,6 @@
         <field table="S_NM_STU_X" field="GuardianFirstName" access="ViewOnly" />
         <field table="S_NM_STU_X" field="GuardianLastName" access="ViewOnly" />
         <field table="S_NM_STU_X" field="GuardianPhone" access="ViewOnly" />
-
     </access_request>
     <publisher name="Edia Learning">
         <contact email="support@edia.app" />
