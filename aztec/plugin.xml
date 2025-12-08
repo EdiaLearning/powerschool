@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd"
     name="Edia Attendance"
-    version="0.0.13"
+    version="0.0.14"
     description="Edia Attendance integration (Aztec)">
     <oauth />
     <access_request>
@@ -487,7 +487,6 @@
         <field table="incident_lu_code" field="created_by" access="ViewOnly" />
         <field table="incident_lu_code" field="created_ts" access="ViewOnly" />
         <field table="incident_lu_code" field="incident_category" access="ViewOnly" />
-        <field table="incident_lu_code" field="is_system_code" access="ViewOnly" />
         <field table="incident_lu_code" field="last_modified_by" access="ViewOnly" />
         <field table="incident_lu_code" field="last_modified_ts" access="ViewOnly" />
         <field table="incident_lu_code" field="state_aggregate_rpt_code" access="ViewOnly" />
@@ -526,6 +525,7 @@
         <field table="S_NM_STU_X" field="GuardianLastName" access="ViewOnly" />
         <field table="S_NM_STU_X" field="GuardianPhone" access="ViewOnly" />
 
+        <field table="U_DEF_EXT_STUDENTS" field="StudentsDCID" access="ViewOnly" />
         <field table="U_DEF_EXT_STUDENTS" field="EIS_DISTRICT_EMAIL" access="ViewOnly" />
     </access_request>
     <publisher name="Edia Learning">
